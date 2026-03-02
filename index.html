@@ -3,63 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cinecidade — Estrutura Técnica para Cinema</title>
+<title>Cinecidade — Estrutura Técnica de Precisão para Cinema</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #0f0f0f;
-    color: white;
+    color: #ffffff;
 }
 
 header {
-    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover no-repeat;
+    padding: 160px 20px;
     text-align: center;
-    background: #111;
 }
 
-h1 {
+header h1 {
+    font-size: 64px;
+    letter-spacing: 6px;
     margin: 0;
-    font-size: 42px;
-    letter-spacing: 3px;
 }
 
 header p {
-    margin-top: 10px;
-    color: #aaa;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #cccccc;
 }
 
 section {
-    padding: 80px 20px;
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
     text-align: center;
 }
 
-.hero {
-    background: linear-gradient(135deg, #111, #1c1c1c);
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
 }
 
-.hero h2 {
-    font-size: 34px;
+.hero p {
+    font-size: 18px;
+    color: #bbbbbb;
+    max-width: 800px;
+    margin: auto;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
+    margin-top: 40px;
+    padding: 18px 40px;
     background: #d4af37;
-    color: black;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
     background: #b8962e;
 }
 
+h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+@media(min-width: 768px){
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+    }
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
 footer {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
     background: #111;
     font-size: 14px;
@@ -70,27 +111,51 @@ footer {
 
 <body>
 
-<header style="background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover no-repeat; padding: 120px 20px; text-align:center;">
-    <h1 style="font-size: 56px; letter-spacing:4px;">CINECIDADE</h1>
-    <p style="font-size:18px; margin-top:15px; color:#ddd;">
-        Estrutura técnica de precisão desde 1984
-    </p>
+<header>
+    <h1>CINECIDADE</h1>
+    <p>Desde 1984 — Estrutura técnica de precisão para produções cinematográficas de alto padrão.</p>
 </header>
 
 <section class="hero">
-    <h2>Infraestrutura para Produções Audiovisuais</h2>
-    <p>Locação especializada de equipamentos cinematográficos com excelência técnica.</p>
-    <a href="#" class="btn">Solicitar Orçamento</a>
+    <h2>Infraestrutura Técnica para Cinema, Publicidade e Streaming</h2>
+    <p>
+        Locação especializada de equipamentos cinematográficos com controle de luz,
+        engenharia de movimento e suporte operacional completo para produções exigentes.
+    </p>
+
+    <a href="https://wa.me/5511971230331?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20locação%20de%20equipamentos." class="btn" target="_blank">
+        Solicitar Orçamento via WhatsApp
+    </a>
 </section>
 
 <section>
-    <h2>Equipamentos</h2>
-    <p>Câmeras, iluminação, grip, maquinaria e suporte completo para cinema, publicidade e streaming.</p>
+    <h2>Estrutura Técnica</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Grip & Maquinaria</h3>
+            <p>Estruturas de sustentação, movimento e segurança para produções de grande porte.</p>
+        </div>
+
+        <div class="card">
+            <h3>Lighting</h3>
+            <p>Soluções completas de iluminação para controle preciso de atmosfera e narrativa visual.</p>
+        </div>
+
+        <div class="card">
+            <h3>Suporte Operacional</h3>
+            <p>Equipe experiente e logística organizada para atender produções com alto nível técnico.</p>
+        </div>
+    </div>
 </section>
 
 <section>
-    <h2>Sobre</h2>
-    <p>A Cinecidade é uma empresa pioneira no setor audiovisual, reconhecida pela qualidade técnica, organização operacional e confiabilidade.</p>
+    <h2>Autoridade e Experiência</h2>
+    <p>
+        Fundada em 1984, a Cinecidade consolidou sua atuação no mercado audiovisual
+        oferecendo estrutura técnica sólida, confiabilidade operacional e domínio
+        técnico em produções cinematográficas, publicitárias e televisivas.
+    </p>
 </section>
 
 <footer>
